@@ -6,7 +6,7 @@ pipeline {
         testParameter1 = 'doodad'
       }
       steps {
-        sh 'echo $HOME'
+        sh 'echo $testParameter1'
       }
     }
 
