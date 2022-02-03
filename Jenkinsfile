@@ -9,7 +9,8 @@ pipeline {
         testParameter1 = 'doodad'
       }
       steps {
-        sh 'echo $testParameter1 ${params.Greeting}'
+        echo '${params.Greeting} Adrian'
+        sh 'echo $testParameter1'
       }
     }
 
