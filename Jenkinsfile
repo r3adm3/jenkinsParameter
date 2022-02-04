@@ -1,7 +1,7 @@
 pipeline {
   agent any
   parameters {
-        string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
+        string(name: 'FirstName', defaultValue: 'Person', description: 'How should I greet the world?')
     }
   stages {
     stage('First Stage') {
@@ -9,7 +9,7 @@ pipeline {
         testParameter1 = 'doodad'
       }
       steps {
-        echo "${params.Greeting} Adrian"
+        echo "Hello ${params.FirstName}!"
         sh 'echo $testParameter1'
       }
     }
