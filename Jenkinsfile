@@ -9,8 +9,9 @@ pipeline {
         testParameter1 = 'doodad'
       }
       steps {
-        echo "Hello ${params.FirstName}!" > /tmp/doodad.txt
+        echo "Hello ${params.FirstName}!"
         sh 'echo $testParameter1'
+        gcloud auth list
       }
     }
 
