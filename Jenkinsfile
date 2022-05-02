@@ -19,7 +19,7 @@ pipeline {
       }
       steps {
             withEnv(['GCLOUD_PATH=/usr/bin']) {
-              sh '$GCLOUD_PATH/gcloud identity groups create ${params.FirstName}@techfrontier.org.uk --organization="techfrontier.org.uk"'
+              sh '$GCLOUD_PATH/gcloud identity groups create ${FIRSTNAME}@techfrontier.org.uk --organization="techfrontier.org.uk"'
             }
       }
     }
