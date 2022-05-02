@@ -18,7 +18,9 @@ pipeline {
         testParameter1 = 'doodad'
       }
       steps {
-       gcloud auth list
+            withEnv(['GCLOUD_PATH=/usr/bin']) {
+                sh '$GCLOUD_PATH/gcloud --version'
+            }
       }
     }
   }
