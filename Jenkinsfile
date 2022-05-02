@@ -10,6 +10,7 @@ pipeline {
       }
       steps {
         echo "Hello ${params.FirstName}!"
+        whoami
         sh 'echo $testParameter1'
       }
     }
