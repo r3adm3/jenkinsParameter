@@ -18,7 +18,7 @@ pipeline {
         testParameter1 = 'doodad'
       }
       steps {
-        gcloud auth list
+
       }
     }
   }
