@@ -18,7 +18,7 @@ pipeline {
         testParameter1 = 'doodad'
       }
       steps {
-
+       echo "2nd Stage, Hello ${params.FirstName}!"
       }
     }
   }
